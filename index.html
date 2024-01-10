@@ -35,23 +35,32 @@
                     </ul>
                 </div>
                 <span class="navTrigger">
-                    <i class="navTi">About</i>
-                    <i class="navTi">Portfolio</i>
-                    <i class="navTi">Services</i>
+                    <i class="navTi"></i>
+                    <i class="navTi"></i>
+                    <i class="navTi"></i>
                 </span>
             </div>
         </nav>
 
 
         <div class="row p-0 m-0">
-            <div class="col position-absolute d-flex align-content-center justify-content-center" style="height: 100vh;">
-                <div class="row d-flex align-content-center">
-                    <span class="slogen"><em>Fusion Art Gallery</em> <br><p>Where Creativity Meets Canvas</p></span>
+            <div class="col position-absolute d-flex align-content-center justify-content-center"
+                style="height: 100vh;">
+
+                <div class="row d-flex align-content-center justify-content-center">
+                    <span class="slogen"><em>Fusion Art Gallery</em> <br><span id="text"
+                            class="typewriter"></span></span>
                 </div>
             </div>
-            <div class="col-6 bg-black left"></div>
-            <div class="col-6 right"></div>
+            <!-- ------------------------------- -->
+            <div class="col left"></div>
         </div>
+
+    </section>
+
+    <section id="Gallery" class="row gallery">
+        
+        
 
     </section>
 
@@ -71,6 +80,33 @@
                 $('.nav').removeClass('affix');
             }
         });
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const textElement = document.getElementById('text');
+            const textContent = 'Where Creativity Meets Canvas...';
+            let index = 0;
+
+            function typeWriter() {
+                if (index < textContent.length) {
+                    textElement.textContent += textContent.charAt(index);
+                    index++;
+                    setTimeout(typeWriter, 100); // Adjust the typing speed (milliseconds)
+                } else {
+                    setTimeout(resetAnimation, 3000); // Reset animation after 3 seconds
+                }
+            }
+
+            function resetAnimation() {
+                textElement.textContent = ''; // Clear the text
+                index = 0;
+                setTimeout(typeWriter, 0); // Start typing again after a brief delay
+            }
+
+            typeWriter();
+        });
+
+
     </script>
 </body>
 

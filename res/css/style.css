@@ -112,12 +112,15 @@ body {
     .container {
         margin: 0;
     }
+    
 }
 
 @media screen and (max-width:768px) {
     .navTrigger {
         display: block;
     }
+
+    
 
     .navTi {
         display: none;
@@ -176,7 +179,7 @@ body {
 }
 
 .navTrigger i {
-    background-color: #fff;
+    background-color: #000000;
     border-radius: 2px;
     content: '';
     display: block;
@@ -372,6 +375,14 @@ body {
 	.myP {
 		padding:2%;
 	}
+
+    .left{
+        width: 100%;
+    }
+
+    .rightB{
+        display: none !important;
+    }
 }
 
 
@@ -382,14 +393,14 @@ body {
 
 .slogen{
     font-family: 'Exo 2', sans-serif !important;
-    font-size: 50px;
+    font-size: 30px;
     color: rgb(0, 0, 0);
     font-weight: 600;
     text-shadow: 2px 2px 10px rgb(27, 26, 26);
 }
 
-.slogen p{
-    margin-left: 150px;
+.typewriter{
+    margin-left: 100px;
 
 }
 
@@ -397,3 +408,5 @@ span em{
     font-size: 70px;
     font-weight: 700px;
 }
+
+/* ------------------------gallery section-------------------- */
