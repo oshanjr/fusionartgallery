@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fusion Art Gallery</title>
+
+    <!-- Css Link -->
+    <link rel="stylesheet" href="res/css/style.css">
+    <link rel="stylesheet" href="res/css/bootstrap.css">
+    <link rel="stylesheet" href="res/css/bootstrap.min.css">
+    <!-- Css Link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    
+    <section id="home" class="home row p-0 m-0">
+
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">Fusion Art</a>
+                </div>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i class="navTi">About</i>
+                    <i class="navTi">Portfolio</i>
+                    <i class="navTi">Services</i>
+                </span>
+            </div>
+        </nav>
+
+
+        <div class="row p-0 m-0">
+            <div class="col position-absolute d-flex align-content-center justify-content-center" style="height: 100vh;">
+                <div class="row d-flex align-content-center">
+                    <span class="slogen"><em>Fusion Art Gallery</em> <br><p>Where Creativity Meets Canvas</p></span>
+                </div>
+            </div>
+            <div class="col-6 bg-black left"></div>
+            <div class="col-6 right"></div>
+        </div>
+
+    </section>
+
+
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- <script src="res/js/jquery-3.7.1.min.js"></script> -->
+    <script src="res/js/script.js"></script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
 </body>
+
 </html>
