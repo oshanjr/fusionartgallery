@@ -6,6 +6,10 @@
 .home {
     height: 100vh;
     overflow-x: 1;
+    background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  transition: background 0.5s ease-in-out;
 }
 
 
@@ -424,6 +428,12 @@ span em {
     font-weight: 700px;
 }
 
+.social a{
+    font-size: 30px;
+
+    margin: 10px;
+}
+
 /* ------------------------gallery section-------------------- */
 
 .gallery {
@@ -526,19 +536,19 @@ span em {
 }
 
 .card:nth-child(1):before {
-    background-image: url('../img/osh.png');
+    background-image: url('../img/bg.jpg');
 }
 
 .card:nth-child(2):before {
-    background-image: url('../img/upek.png');
+    background-image: url('../img/bg5.jpg');
 }
 
 .card:nth-child(3):before {
-    background-image: url('../img/neranjan.jpg');
+    background-image: url('../img/bg7.jpg');
 }
 
 .card:nth-child(4):before {
-    background-image: url('../img/sachintha.jpg');
+    background-image: url('../img/bg5.jpg');
 }
 
 .card:nth-child(5):before {
@@ -698,3 +708,8 @@ span em {
     display: flex;
     color: white;
   }
+
+
+
+
+  
